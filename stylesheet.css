@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat","Merriweather", "PT Sans", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0 0;
+    color: #4f768e;
+}
+
+.header{
+    width: 25%;
+    text-align: center;
+    padding-top: 25px;
+    display: inline-block;
+    margin: 0 0;
+    height: 69px;
+    border: 2px solid #4f768e;
+    border-right: 1px;
+}
+
+.entireheader {
+    top: 0;
+    width: 100%;
+}
+
+h3 {
+    color: #4f768e;
+}
+
+h1, h3, h4, h5 {
+    font-weight: 700;
+}
+
+.header a {
+   text-decoration: none;
+   color: black;
+   margin: 0;
+   border: 0;
+   padding: 0;
+}
+
+#home {
+    float:left;
+}
+ 
+#aboutme {
+    float: right;
+}
+
+li {
+    font-size: 20px;
+    padding: 8px;
+    list-style-position: inside;
+    width: 290px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+#dayone {
+    background-color: aliceblue;
+}
+
+p a:hover {
+    opacity: 0.6;
+}
+
+h4:hover , li:hover {
+    opacity: 0.8;
+}
+
+#daytwo {
+    background-color: blanchedalmond;
+}
+
+#daythree {
+    background-color: lightsalmon;
+}
+
+#dayfour {
+    background-color: yellowgreen;
+}
+
+#dayfive{
+    background-color: lightskyblue;
+}
+
+#daysix {
+    background-color:peru;
+    margin-bottom: 50px;
+}
+
+#donate {
+    float:right;
+}
+
+.firstvideo {
+    display: block;
+    margin: 20px auto;
+    max-width: 1008px;
+    height: 567px;
+    width: 85%;
+
+}
+
+.profilephoto {
+    display:inline-block;
+    width: 50%;
+}
+
+.homephoto {
+    width: 500px;
+    height: 500px;
+}
+
+.minivids {
+    height: 480px;
+    width: 640px;
+}
+
+ul {
+    display: inline-block;
+}
