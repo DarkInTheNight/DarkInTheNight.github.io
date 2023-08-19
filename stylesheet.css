@@ -81,23 +81,23 @@ h4:hover , li:hover {
 }
 
 #daytwo {
-    background-color: blanchedalmond;
+    background-color: rgb(220,228,255);
 }
 
 #daythree {
-    background-color: lightsalmon;
+    background-color: rgb(200,208,255);
 }
 
 #dayfour {
-    background-color: yellowgreen;
+    background-color: rgb(180,188,255);
 }
 
 #dayfive{
-    background-color: lightskyblue;
+    background-color: rgb(160,168,255);
 }
 
 #daysix {
-    background-color:peru;
+    background-color:rgb(140,148,255);
     margin-bottom: 50px;
 }
 
