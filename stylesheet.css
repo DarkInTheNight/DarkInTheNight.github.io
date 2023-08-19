@@ -136,14 +136,14 @@ ul {
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-/* Slideshow container */
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
   }
   
-  /* Next & previous buttons */
+
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -159,7 +159,7 @@ img {vertical-align: middle;}
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
+
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -221,4 +221,9 @@ img {vertical-align: middle;}
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+
+.text {
+    color: white;
+    font-weight: 1000;
+}
 

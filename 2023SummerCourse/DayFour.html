@@ -23,16 +23,52 @@
     <section>
         <h3>Electricity</h3>
         <p>In today's lesson, the class learned about electrons, how they flow to create electric current, and about conductors and insulators. Using their new knowledge, they created electrical circuits using various foodstuffs as power supplies to power a clock in order to find out which ones were conductors and which ones were insulators for a scientific experiment. Some children even figured out how to power the clock using their own bodies!</p>
-        <img src="../assets\images/ELECTRICITY1.jpg">
-        <p>The kids' task was to create a circuit with vegetables as the power supply!</p>
-        <img src="../assets\images/ELECTRICITY2.jpg">
-        <p>All the groups raced to get the circuit working.</p>
-        <img src="../assets\images/ELECTRICITY3.jpg">
-        <p>And the results were amazing - the clock worked with a potato and an apple instead of a battery!</p>
-        <img src="../assets\images/ELECTRICITY4.jpg">
-        <p>Afterwards, the kids tested which foodstuffs were conductors and which were insulators for their experiment.</p>
-        <img src="../assets\images/ELECTRICITY5.jpg">
-        <p>They discovered that humans were conductors too!</p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="../assets\images/ELECTRICITY1.jpg" style="width:100%">
+              <div class="text">The kids' task was to create a circuit with vegetables as the power supply!</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="../assets\images/ELECTRICITY2.jpg" style="width:100%">
+              <div class="text">All the groups raced to get the circuit working.</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="../assets\images/ELECTRICITY3.jpg" style="width:100%">
+              <div class="text">And the results were amazing - the clock worked with a potato and an apple instead of a battery!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="../assets\images/ELECTRICITY4.jpg" style="width:100%">
+                <div class="text">Afterwards, the kids tested which foodstuffs were conductors and which were insulators for their experiment.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="../assets\images/ELECTRICITY5.jpg"style="width:100%">
+                <div class="text">They discovered that humans were conductors too!</div>
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
         <ul>
             <li id="dayone"><a href="DayOne.html">Force</a></li>
             <li id="daytwo"><a href="DayTwo.html">Air Pressure</a></li>
@@ -40,10 +76,37 @@
             <li id="dayfour"><a href="DayFour.html">Electricity</a></li>
             <li id="dayfive"><a href="DayFive.html">Aerodynamics</a></li>
             <li id="daysix"><a href="DaySix.html">Electricity (Again)</a></li>
-        </ul>
-    </section>
-    <footer>
+        </ul>    
 
-    </footer>
+
+    </section>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 </body>
 </html>
