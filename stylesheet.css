@@ -253,3 +253,7 @@ img {vertical-align: middle;}
     color: white;
     text-decoration: none;
 }
+
+.tiny {
+    font-size: 10px;
+}
