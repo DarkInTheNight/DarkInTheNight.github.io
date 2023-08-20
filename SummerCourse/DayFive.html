@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AralSTEM</title>
+  <link rel='stylesheet' href='../stylesheet.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="entireheader">
+            <h1>AralSTEM</h1>
+            <h4 class="header" id="home"><a href="https://aralstem.org/" >Home</a></h4>
+            <h4 class="header"><a href="../2023SummerCourse.html">2023 Summer Course</a></h4>
+            <h4 class="header" id="aboutme"><a href="../AboutMe.html">About Me</a></h4>
+            <h4 class="header" id="donate"><a href="../Donate.html">Donate</a></h4>
+            <h4 class="header" id="donate"><a href="../Volunteer.html">Volunteer</a></h4>
+        </div>
+    </header>
+    <section>
+        <h3>Aerodynamics</h3>
+        <p>Today was my last lesson with the 5th grade class, and it was a fun one! They learned about aerodynamic principles and used them in order to first create and race straw-powered paper rockets and then transitioned to building large bottle rockets, some of which flew over 100 feet (30 metres) into the sky!
+            <br><br>
+        This has been such a crazy week and both the kids and I loved it so much!  After this, I am determined to help more children to gain exposure to these immersize science experiences.
+        </p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <iframe width="100%" height="600" src="https://www.youtube.com/embed/T2SuqpBG7VY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="text">The last lesson with the 5th graders was an incredibly involved one, and it began with a competition of launching small straw-powerd rockets.</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="../assets\images/AERO2.jpg" style="width:100%">
+              <div class="text">They used their learnings from the small rockets to build larger bottle rockets.</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="../assets\images/AERO3.jpg" style="width:100%">
+              <div class="text">Everyone posed for a final photo before launching the rockets.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="../assets\images/AERO4.jpg" style="width:100%">
+                <div class="text">These girls were proud of their rocket build.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <iframe style="width:100%" height="600" src="https://www.youtube.com/embed/LNQhQdZLnlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="text">And this was the result!</div>
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+        <ul>
+            <li id="dayone"><a href="DayOne">Force</a></li>
+            <li id="daytwo"><a href="DayTwo">Air Pressure</a></li>
+            <li id="daythree"><a href="DayThree">Water</a></li>
+            <li id="dayfour"><a href="DayFour">Electricity</a></li>
+            <li id="dayfive"><a href="DayFive">Aerodynamics</a></li>
+            <li id="daysix"><a href="DaySix">Electricity (Again)</a></li>
+        </ul>    
+
+
+    </section>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>

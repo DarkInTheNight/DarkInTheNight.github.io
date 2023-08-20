@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AralSTEM</title>
+  <link rel='stylesheet' href='../stylesheet.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="entireheader">
+            <h1>AralSTEM</h1>
+            <h4 class="header" id="home"><a href="https://aralstem.org/" >Home</a></h4>
+            <h4 class="header"><a href="../2023SummerCourse.html">2023 Summer Course</a></h4>
+            <h4 class="header" id="aboutme"><a href="../AboutMe.html">About Me</a></h4>
+            <h4 class="header" id="donate"><a href="../Donate.html">Donate</a></h4>
+            <h4 class="header" id="donate"><a href="../Volunteer.html">Volunteer</a></h4>
+        </div>
+    </header>
+    <section>
+        <h3>Force</h3>
+        <p>Today's lesson involved me giving the class a basic introduction to force, including basic examples such as gravity, and also using force diagrams to explain why items move and why eggs break. They then used their newfound knowledge to build packages to protect an egg in an egg drop challenge. <br><br>
+        
+        I would be lying if I said I wasn't nervous before the lesson; a lot of preparation had gone into getting to this point, and it was a large class of around 30 children. Even some teachers came in to watch. On top of that, I was jetlagged (12 hour time difference between California and Uzbekistan!), and it was my first time teaching science in Uzbek, which required me to learn a lot of new vocabulary. But when the lesson began, all my fears dissipated as I saw the spark of excitement in the children's  eyes, and I was blown away by the energy and level of participation in the egg drop challenge. After today, I can't wait for the rest of the week!</p>
+  
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="../assets\images/FORCE1.jpg" style="width:100%">
+              <div class="text">The lesson began with an explanation of how force works.</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="../assets\images/FORCE2.jpg" style="width:100%">
+              <div class="text">Once the explanation was finished, the kids divided into groups and worked together to create structures to protect an egg dropped from a window.</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="../assets\images/FORCE3.jpg" style="width:100%">
+              <div class="text">One team made a parachute to protect their egg.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="../assets\images/FORCE4.jpg" style="width:100%">
+                <div class="text">The kids were incredibly excited to see the results of the challenge.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="../assets\images/FORCE5.jpg"style="width:100%">
+                <div class="text">Incredibly, the balloons kept the egg safe!</div>
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+        <ul>
+          <li id="dayone"><a href="DayOne">Force</a></li>
+          <li id="daytwo"><a href="DayTwo">Air Pressure</a></li>
+          <li id="daythree"><a href="DayThree">Water</a></li>
+          <li id="dayfour"><a href="DayFour">Electricity</a></li>
+          <li id="dayfive"><a href="DayFive">Aerodynamics</a></li>
+          <li id="daysix"><a href="DaySix">Electricity (Again)</a></li>
+        </ul>    
+
+
+    </section>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AralSTEM</title>
+  <link rel='stylesheet' href='../stylesheet.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="entireheader">
+            <h1>AralSTEM</h1>
+            <h4 class="header" id="home"><a href="https://aralstem.org/" >Home</a></h4>
+            <h4 class="header"><a href="../2023SummerCourse.html">2023 Summer Course</a></h4>
+            <h4 class="header" id="aboutme"><a href="../AboutMe.html">About Me</a></h4>
+            <h4 class="header" id="donate"><a href="../Donate.html">Donate</a></h4>
+            <h4 class="header" id="donate"><a href="../Volunteer.html">Volunteer</a></h4>
+        </div>
+    </header>
+    <section>
+        <h3>Air Pressure</h3>
+        <p>Today's lesson was a busy one! I taught the class about gas particles and the air pressure they exert, giving them examples such as the Magdeburg hemispheres. Then, I gave them 3 demonstrations: water staying in an upside down cup, an egg falling into and out of a small-mouthed bottle, and a can being crushed by air. The lesson ended with the children building and racing each other with balloon-powered cars. Another exciting day!</p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="../assets\images/AIR1.jpg" style="width:100%" >
+              <div class="text">As always, the lesson began with an explanation on the topic: air pressure.</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <iframe style="width:100%" height="600" src="https://www.youtube.com/embed/2uXAfvJuxZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="minivids"></iframe>
+              <div class="text">One simple yet shocking demonstration of air pressure's power is its ability to <a href="https://coolscienceexperimentshq.com/upside-down-glass-of-water-experiment/" target="_blank">keep water in an upside-down cup.</a></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <iframe style="width:100%" height="600" src="https://www.youtube.com/embed/PLMnOtkCqKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="minivids"></iframe>
+              <div class="text">Air pressure can also be used to get an <a href="https://www.youtube.com/watch?v=28TIyWdfxxc" target="_blank">egg in and out of a bottle!</a></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <iframe style="width:100%" height="600" src="https://www.youtube.com/embed/GzQUs1f6qcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="minivids"></iframe>
+                <div class="text">The final demonstration used air pressure to <a href="https://www.physics.colostate.edu/physics-demos/can-crush-by-air-pressure/" target="_blank">crush a can.</a></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <iframe style="width:100%" height="600" src="https://www.youtube.com/embed/5ePqsdAi7vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="minivids"></iframe>
+                <div class="text">The final task was a fun one as the kids built and raced air-powered balloon cars!</div>
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+        <ul>
+          <li id="dayone"><a href="DayOne">Force</a></li>
+          <li id="daytwo"><a href="DayTwo">Air Pressure</a></li>
+          <li id="daythree"><a href="DayThree">Water</a></li>
+          <li id="dayfour"><a href="DayFour">Electricity</a></li>
+          <li id="dayfive"><a href="DayFive">Aerodynamics</a></li>
+          <li id="daysix"><a href="DaySix">Electricity (Again)</a></li>
+        </ul>    
+
+
+    </section>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>
