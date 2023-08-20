@@ -240,11 +240,16 @@ img {vertical-align: middle;}
     margin-right: auto;
     margin-top: 5%;
     width: 25%;
-    background-color: lightcoral;
     padding-left: 3%;
     padding-right: 3%;
     border-radius: 20px;
     font-size: 35px;
-    color:#4f768e;
+    background-color: lightskyblue;
+    color:white;
     text-align: center;
+}
+
+#donatebutton a {
+    color: white;
+    text-decoration: none;
 }
