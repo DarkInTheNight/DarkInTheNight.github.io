@@ -17,7 +17,7 @@ h1 {
 }
 
 .header{
-    width: 20%;
+    width: 16.666%;
     text-align: center;
     padding-top: 25px;
     display: inline-block;
@@ -25,7 +25,14 @@ h1 {
     height: 69px;
     border: 2px solid #4f768e;
     border-right: 1px;
+    
 }
+
+#summer {
+    padding-top: 8px;
+    margin-bottom: 0;
+}
+
 
 .entireheader {
     top: 0;
@@ -105,6 +112,12 @@ h4:hover , li:hover {
     float:right;
 }
 
+#resource {
+    float:right;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
 .firstvideo {
     display: block;
     margin: 20px auto;
@@ -122,6 +135,14 @@ h4:hover , li:hover {
 .homephoto {
     width: 500px;
     height: 500px;
+}
+
+#tajriba {
+    width: 100%;
+}
+
+#tajriba li {
+    font-size: 125%;
 }
 
 .minivids {
